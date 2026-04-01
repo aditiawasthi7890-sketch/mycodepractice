@@ -372,4 +372,110 @@
 
 # result = custom.unique_list(A)
 # print("Unique elements:", result)
-print("hello")
+
+
+# import math
+
+# try:
+#     import turtle
+# except ImportError:
+#     print("Turtle library install ho rahi hai...")
+#     import os
+#     os.system('pip install PythonTurtle')
+#     import turtle
+
+# # Setup screen
+# screen = turtle.Screen()
+# screen.setup(width=800, height=800)
+# screen.bgcolor("black")
+# screen.title("Beautiful Red Heart ❤️")
+
+# # Create turtle for heart
+# heart = turtle.Turtle()
+# heart.speed(0)
+# heart.hideturtle()
+
+# # Function to draw heart using mathematical formula
+# def draw_beautiful_heart():
+#     # Draw filled heart
+#     heart.color("red")
+#     heart.penup()
+    
+#     # Start position
+#     t = 0
+#     x = 16 * math.sin(math.radians(t)) ** 3
+#     y = 13 * math.cos(math.radians(t)) - 5 * math.cos(math.radians(2*t)) - 2 * math.cos(math.radians(3*t)) - math.cos(math.radians(4*t))
+#     x = x * 15
+#     y = y * 15
+#     heart.goto(x, y)
+    
+#     heart.pendown()
+#     heart.begin_fill()
+    
+#     # Use parametric equations for heart shape
+#     for t in range(0, 361, 1):
+#         x = 16 * math.sin(math.radians(t)) ** 3
+#         y = 13 * math.cos(math.radians(t)) - 5 * math.cos(math.radians(2*t)) - 2 * math.cos(math.radians(3*t)) - math.cos(math.radians(4*t))
+        
+#         # Scale it up
+#         x = x * 15
+#         y = y * 15
+        
+#         heart.goto(x, y)
+    
+#     heart.end_fill()
+
+# # Draw outer glow effect
+# def draw_glow():
+#     colors = ["#FF0066", "#FF3366", "#FF6666"]
+#     sizes = [1.3, 1.2, 1.1]
+    
+#     for i in range(len(colors)):
+#         color = colors[i]
+#         size = sizes[i]
+        
+#         glow = turtle.Turtle()
+#         glow.hideturtle()
+#         glow.speed(0)
+#         glow.color(color)
+#         glow.pensize(2)
+#         glow.penup()
+        
+#         # Start position
+#         t = 0
+#         x = 16 * math.sin(math.radians(t)) ** 3
+#         y = 13 * math.cos(math.radians(t)) - 5 * math.cos(math.radians(2*t)) - 2 * math.cos(math.radians(3*t)) - math.cos(math.radians(4*t))
+#         x = x * 15 * size
+#         y = y * 15 * size
+#         glow.goto(x, y)
+#         glow.pendown()
+        
+#         for t in range(0, 361, 2):
+#             x = 16 * math.sin(math.radians(t)) ** 3
+#             y = 13 * math.cos(math.radians(t)) - 5 * math.cos(math.radians(2*t)) - 2 * math.cos(math.radians(3*t)) - math.cos(math.radians(4*t))
+            
+#             x = x * 15 * size
+#             y = y * 15 * size
+            
+#             glow.goto(x, y)
+
+# # Write text
+# def write_text():
+#     text = turtle.Turtle()
+#     text.hideturtle()
+#     text.color("white")
+#     text.penup()
+#     text.goto(0, -280)
+#     text.write("Made with Python ❤️", align="center", font=("Arial", 24, "bold"))
+
+# # Draw everything
+# print("Drawing heart... Please wait!")
+# draw_glow()
+# draw_beautiful_heart()
+# write_text()
+# print("Heart ready! ❤️")
+
+# # Keep window open
+# turtle.done()
+
+                     
